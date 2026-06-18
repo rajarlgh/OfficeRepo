@@ -870,6 +870,44 @@ ul, ol {
   }
 }
 
+/* ===== PROMPTATHON PRESENTATION GALLERY ===== */
+.ppt-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+}
+
+.ppt-slide-card {
+  margin: 0;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ppt-slide-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.ppt-slide-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.ppt-slide-card figcaption {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-gray-700);
+  border-top: 1px solid var(--color-gray-200);
+}
+
 /* ===== CUSTOMER SUCCESS STORIES ===== */
 .stories-grid {
   display: grid;
@@ -1116,6 +1154,7 @@ ul, ol {
 
 /* Responsive overrides for new sections */
 @media (max-width: 900px) {
+  .ppt-gallery-grid,
   .stories-grid,
   .value-grid,
   .innovation-grid {
