@@ -40,6 +40,8 @@
     <meta property="og:image" content="https://atellica-dx.example.com/social-preview.svg" />
     <meta name="twitter:image" content="https://atellica-dx.example.com/social-preview.svg" />
     <meta name="theme-color" content="#0d2045" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="format-detection" content="telephone=no" />
 
     <link rel="canonical" href="https://atellica-dx.example.com/" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -115,6 +117,9 @@
         <button id="theme-toggle" class="presentation-toggle" type="button" aria-pressed="false">
           Dark Stage
         </button>
+        <button id="print-briefing" class="presentation-toggle" type="button">
+          Print Briefing
+        </button>
         <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
           <a href="#mission">Objective</a>
           <a href="#challenge">Problem</a>
@@ -124,6 +129,8 @@
           <a href="#winning-pitch">Winning Pitch</a>
           <a href="#iteration-loop">Iteration Loop</a>
           <a href="#success-pillars">Success Pillars</a>
+          <a href="#about-contact">About</a>
+          <a href="#about-contact">Contact</a>
         </nav>
       </div>
 
@@ -143,6 +150,14 @@
           <span class="chip-label">Clearance:</span>
           <span class="chip-value">Promptathon Teams</span>
         </div>
+      </div>
+
+      <div class="healthineers-ribbon" aria-label="Brand identity">
+        <p class="healthineers-name">
+          <span class="siemens-word">SIEMENS</span>
+          <span class="healthineers-word">Healthineers</span>
+        </p>
+        <p class="healthineers-context">Atellica Solution Center | Global Conference Experience</p>
       </div>
     </header>
 
@@ -429,13 +444,64 @@
         <p>Creative AI utilization, frictionless UX, strong execution, and clear business value define the champion solution.</p>
         <a class="btn btn-primary" href="#main-content">Back to Top</a>
       </section>
+
+      <section id="about-contact" class="section split enterprise" aria-labelledby="about-title" data-slide="Slide 12">
+        <p class="slide-label">Slide 12</p>
+        <article>
+          <div class="section-head">
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">Program and platform context</h2>
+          </div>
+          <p class="lead-text">
+            This static website is the digital briefing layer for the Atellica Promptathon 2026 beginner track, aligned to conference use-case storytelling and rapid solution validation.
+          </p>
+          <ul class="objective-list">
+            <li>Built for booth demonstration and stakeholder review</li>
+            <li>Optimized for presentation mode and print handouts</li>
+            <li>Structured for UX clarity, brand fidelity, and business framing</li>
+          </ul>
+        </article>
+        <article>
+          <div class="section-head">
+            <p class="eyebrow">Contact</p>
+            <h2>Program office and legal</h2>
+          </div>
+          <p class="lead-text">For content updates, review cycles, and release approvals, contact the Atellica Solution Center team.</p>
+          <ul class="objective-list">
+            <li>Email: <a href="mailto:atellica.solution.center@example.com">atellica.solution.center@example.com</a></li>
+            <li>Program Desk: +1 (000) 000-0000</li>
+            <li>Support Window: Mon-Fri, 08:00-18:00</li>
+          </ul>
+          <p class="legal-note" id="privacy">
+            Privacy notice: analytics in this demo is placeholder-only and requires explicit cookie consent. No tracking is active until accepted.
+          </p>
+        </article>
+      </section>
     </main>
 
     <footer class="site-footer">
       <p>Atellica Digital Experience | AI Promptathon 2026</p>
-      <p class="brandline"><strong>Siemens Healthineers</strong> | Atellica Solution Center</p>
+      <p class="brandline">
+        <span class="siemens-word">SIEMENS</span>
+        <span class="healthineers-word">Healthineers</span>
+        <span>| Atellica Solution Center</span>
+      </p>
+      <p class="footer-links">
+        <a href="#privacy">Privacy</a> | <a href="#privacy">Cookies</a> | <a href="#privacy">Terms</a>
+      </p>
       <p><span id="year"></span> Strategic Mission Briefing and Playbook</p>
     </footer>
+
+    <aside id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+      <p>
+        This website uses optional analytics cookies to improve briefing performance insights.
+        <a href="#privacy">Review privacy notice</a>.
+      </p>
+      <div class="cookie-actions">
+        <button id="cookie-accept" class="btn btn-primary" type="button">Accept</button>
+        <button id="cookie-reject" class="btn btn-ghost" type="button">Reject</button>
+      </div>
+    </aside>
 
     <script src="script.js"></script>
   </body>
