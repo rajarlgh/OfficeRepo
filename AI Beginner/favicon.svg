@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Atellica icon">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f4f95" />
+      <stop offset="100%" stop-color="#0d2045" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="10" fill="url(#g)" />
+  <circle cx="18" cy="18" r="5" fill="#ff7d31" />
+  <path d="M18 46L30 18H36L48 46H41L38.5 39H27.5L25 46H18ZM29.6 33H36.4L33 23.4L29.6 33Z" fill="#ffffff" />
+</svg>
